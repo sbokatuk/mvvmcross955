@@ -34,7 +34,7 @@ namespace CrashableTestApp.Droid.Services
         }
 
         //replace void to async Task and you will see a magic
-        private void TestStuff()
+        private async Task TestStuff()
         {
             Console.WriteLine($"Thread: {System.Threading.Thread.CurrentThread.ManagedThreadId}");
             AndroidMvxInitializer.SafeEnsureInitialized();
